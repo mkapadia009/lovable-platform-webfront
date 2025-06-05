@@ -40,8 +40,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-pharma-blue">Email</h4>
-                    <p className="text-pharma-grey">info@lovableplatform.com</p>
-                    <p className="text-pharma-grey text-sm">sales@lovableplatform.com</p>
+                    <p className="text-pharma-grey">info@Traverseplatform.com</p>
+                    <p className="text-pharma-grey text-sm">sales@Traverseplatform.com</p>
                   </div>
                 </div>
 

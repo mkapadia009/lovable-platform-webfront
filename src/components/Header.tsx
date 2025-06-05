@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>info@lovableplatform.com</span>
+              <span>info@Traverseplatform.com</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -33,18 +33,21 @@ const Header = () => {
       {/* Main navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
+          <div className="text-2xl lg:text-3xl font-bold">
+          <img src="https://i.ibb.co/vC0MwJZg/assets-task-01jwv0dnv9eak97c3vrdj8vd66-1748958169-img-0-removebg-preview.png" width="200px" alt="" />
+        </div>
           {/* Logo */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <div className="bg-gradient-to-r from-pharma-blue to-pharma-green p-2 rounded-lg mr-3">
               <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
                 <span className="text-pharma-blue font-bold text-lg">L</span>
               </div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-pharma-blue">Lovable Platform</h1>
+              <h1 className="text-xl font-bold text-pharma-blue">Traverse Platform</h1>
               <p className="text-xs text-pharma-grey">Pharmaceutical Solutions</p>
             </div>
-          </div>
+          </div> */}
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">

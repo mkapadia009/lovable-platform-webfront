@@ -27,7 +27,7 @@ const About = () => {
             Trusted Partner in Pharmaceutical Excellence
           </h2>
           <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
-            For over 25 years, Lovable Platform has been at the forefront of pharmaceutical raw material supply, 
+            For over 25 years, Traverse Platform has been at the forefront of pharmaceutical raw material supply, 
             building lasting partnerships with healthcare companies worldwide.
           </p>
         </div>
@@ -51,7 +51,7 @@ const About = () => {
             <div>
               <h3 className="text-3xl font-bold text-pharma-blue mb-6">Our Story</h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
-                Founded in 1998, Lovable Platform began as a vision to provide pharmaceutical companies 
+                Founded in 1998, Traverse Platform began as a vision to provide pharmaceutical companies 
                 with reliable, high-quality raw materials. Today, we're a global leader in pharmaceutical 
                 supply chain solutions, serving customers across six continents.
               </p>

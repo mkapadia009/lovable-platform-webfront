@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Lovable Platform</h3>
+                <h3 className="text-xl font-bold">Traverse Platform</h3>
                 <p className="text-blue-200 text-sm">Pharmaceutical Solutions</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pharma-green" />
-                <span className="text-blue-200">info@lovableplatform.com</span>
+                <span className="text-blue-200">info@Traverseplatform.com</span>
               </div>
             </div>
             
@@ -104,7 +104,7 @@ const Footer = () => {
         <div className="border-t border-blue-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-blue-200 text-sm mb-4 md:mb-0">
-              © 2024 Lovable Platform. All rights reserved.
+              © 2024 Traverse Platform. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-blue-200 hover:text-white transition-colors">Privacy Policy</a>
