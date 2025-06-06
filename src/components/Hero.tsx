@@ -32,7 +32,7 @@ const Hero = () => {
               </div>
 
               {/* Trust indicators */}
-              <div className="grid grid-cols-3 gap-8">
+              {/* <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
                   <Shield className="w-8 h-8 mx-auto mb-2 text-yellow-300" />
                   <div className="text-2xl font-bold">99.9%</div>
@@ -48,7 +48,7 @@ const Hero = () => {
                   <div className="text-2xl font-bold">25+</div>
                   <div className="text-blue-100 text-sm">Years Experience</div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Image */}

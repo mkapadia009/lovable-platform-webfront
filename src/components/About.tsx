@@ -1,21 +1,40 @@
-
-import React from 'react';
-import { Globe, Users, Building, TrendingUp } from 'lucide-react';
+import React from "react";
+import { Globe, Users, Building, TrendingUp } from "lucide-react";
 
 const About = () => {
   const stats = [
     { icon: Globe, number: "50+", label: "Countries Served" },
     { icon: Users, number: "500+", label: "Team Members" },
     { icon: Building, number: "12", label: "Manufacturing Sites" },
-    { icon: TrendingUp, number: "99.8%", label: "Customer Satisfaction" }
+    { icon: TrendingUp, number: "99.8%", label: "Customer Satisfaction" },
   ];
 
   const timeline = [
-    { year: "1998", title: "Company Founded", description: "Started as a small pharmaceutical trading company" },
-    { year: "2005", title: "First Manufacturing Facility", description: "Opened our first GMP-certified production facility" },
-    { year: "2012", title: "International Expansion", description: "Expanded operations to Europe and Asia-Pacific" },
-    { year: "2018", title: "R&D Center Launch", description: "Established advanced research and development center" },
-    { year: "2023", title: "Sustainable Operations", description: "Achieved carbon-neutral manufacturing processes" }
+    {
+      year: "1998",
+      title: "Company Founded",
+      description: "Started as a small pharmaceutical trading company",
+    },
+    {
+      year: "2005",
+      title: "First Manufacturing Facility",
+      description: "Opened our first GMP-certified production facility",
+    },
+    {
+      year: "2012",
+      title: "International Expansion",
+      description: "Expanded operations to Europe and Asia-Pacific",
+    },
+    {
+      year: "2018",
+      title: "R&D Center Launch",
+      description: "Established advanced research and development center",
+    },
+    {
+      year: "2023",
+      title: "Sustainable Operations",
+      description: "Achieved carbon-neutral manufacturing processes",
+    },
   ];
 
   return (
@@ -27,8 +46,9 @@ const About = () => {
             Trusted Partner in Pharmaceutical Excellence
           </h2>
           <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
-            For over 25 years, Traverse Platform has been at the forefront of pharmaceutical raw material supply, 
-            building lasting partnerships with healthcare companies worldwide.
+            For over 25 years, Traverse Platform has been at the forefront of
+            pharmaceutical raw material supply, building lasting partnerships
+            with healthcare companies worldwide.
           </p>
         </div>
 
@@ -39,7 +59,9 @@ const About = () => {
               <div className="bg-gradient-to-br from-pharma-blue to-pharma-green p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform">
                 <stat.icon className="w-12 h-12 text-white mx-auto" />
               </div>
-              <div className="text-4xl font-bold text-pharma-blue mb-2">{stat.number}</div>
+              <div className="text-4xl font-bold text-pharma-blue mb-2">
+                {stat.number}
+              </div>
               <div className="text-pharma-grey font-medium">{stat.label}</div>
             </div>
           ))}
@@ -49,24 +71,36 @@ const About = () => {
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-3xl font-bold text-pharma-blue mb-6">Our Story</h3>
+              <h3 className="text-3xl font-bold text-pharma-blue mb-6">
+                Our Story
+              </h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
-                Founded in 1998, Traverse Platform began as a vision to provide pharmaceutical companies 
-                with reliable, high-quality raw materials. Today, we're a global leader in pharmaceutical 
-                supply chain solutions, serving customers across six continents.
+                Founded in [1995] by the visionary Late Mr. Bhupendra Doshi,
+                [Company Name] has grown into a trusted name in the
+                pharmaceutical industry. With a legacy built on integrity,
+                quality, and long-standing partnerships, the company is now
+                reaching new heights under the dynamic leadership of Mr. Ankur
+                Doshi, representing the second generation of excellence.
               </p>
-              
+
               <p className="text-pharma-grey leading-relaxed mb-6">
-                Our commitment to innovation, quality, and customer service has made us the preferred 
-                partner for multinational pharmaceutical companies, biotech firms, and research institutions worldwide.
+                For over 30 years, we have been at the forefront of sourcing,
+                trading, and distributing a wide spectrum of pharmaceutical
+                products, including Active Pharmaceutical Ingredients (APIs),
+                excipients, enzymes, antibiotics, and botanical extracts. Our
+                multi-generational commitment to quality and service continues
+                to drive our growth and reputation in the industry.
               </p>
 
               <div className="bg-pharma-green/10 p-6 rounded-xl">
-                <h4 className="font-semibold text-pharma-blue mb-2">Our Mission</h4>
+                <h4 className="font-semibold text-pharma-blue mb-2">
+                  Our Mission
+                </h4>
                 <p className="text-pharma-grey">
-                  To advance global health by providing pharmaceutical companies with the highest quality 
-                  raw materials, expert support, and innovative solutions that enable the development 
-                  of life-saving medications.
+                  To advance global health by providing pharmaceutical companies
+                  with the highest quality raw materials, expert support, and
+                  innovative solutions that enable the development of
+                  life-saving medications.
                 </p>
               </div>
             </div>
@@ -74,8 +108,8 @@ const About = () => {
 
           {/* Image */}
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=600&q=80"
+            <img
+              src="https://i.postimg.cc/RZF1PHfx/image1.png"
               alt="Modern pharmaceutical facility"
               className="w-full h-96 object-cover rounded-2xl shadow-2xl"
             />
@@ -90,25 +124,34 @@ const About = () => {
 
         {/* Timeline */}
         <div className="bg-gray-50 rounded-2xl p-12">
-          <h3 className="text-3xl font-bold text-pharma-blue text-center mb-12">Our Journey</h3>
+          <h3 className="text-3xl font-bold text-pharma-blue text-center mb-12">
+            Our Journey
+          </h3>
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-1 bg-pharma-blue/20 hidden md:block"></div>
-            
+
             <div className="space-y-12">
               {timeline.map((item, index) => (
-                <div key={index} className="relative flex items-start space-x-8">
+                <div
+                  key={index}
+                  className="relative flex items-start space-x-8"
+                >
                   {/* Timeline dot */}
                   <div className="bg-pharma-blue p-3 rounded-full relative z-10 hidden md:block">
                     <div className="w-4 h-4 bg-white rounded-full"></div>
                   </div>
-                  
+
                   {/* Content */}
                   <div className="bg-white rounded-xl p-6 shadow-lg flex-1 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                       <div>
-                        <div className="text-pharma-green font-bold text-lg mb-2">{item.year}</div>
-                        <h4 className="text-xl font-semibold text-pharma-blue mb-2">{item.title}</h4>
+                        <div className="text-pharma-green font-bold text-lg mb-2">
+                          {item.year}
+                        </div>
+                        <h4 className="text-xl font-semibold text-pharma-blue mb-2">
+                          {item.title}
+                        </h4>
                         <p className="text-pharma-grey">{item.description}</p>
                       </div>
                     </div>
