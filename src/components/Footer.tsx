@@ -17,15 +17,7 @@ const Footer = () => {
               trusted by healthcare companies worldwide for over 25 years.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
+             
             </div>
           </div>
 
@@ -62,17 +54,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-pharma-green mt-1" />
                 <div className="text-blue-200">
-                  <p>123 Pharmaceutical Ave</p>
-                  <p>Boston, MA 02101, USA</p>
+                  <p>507, Kailas Plaza, Vallabh Baug Lane</p>
+                  <p>Ghatkopar(E), Mumbai-400077</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-pharma-green" />
-                <span className="text-blue-200">+1 (555) 123-4567</span>
+                <span className="text-blue-200">22-35133948 / 022-35130492 / 9372780117 / 9967485800</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pharma-green" />
-                <span className="text-blue-200">info@Traverseplatform.com</span>
+                <span className="text-blue-200">ankur@jignaenterprises.com</span>
               </div>
             </div>
           </div>

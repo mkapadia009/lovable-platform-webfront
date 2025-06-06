@@ -70,9 +70,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-pharma-blue">Phone</h4>
-                    <p className="text-pharma-grey">+1 (555) 123-4567</p>
+                    <p className="text-pharma-grey">022-35133948 / 022-35130492</p>
                     <p className="text-pharma-grey text-sm">
-                      24/7 Support Available
+                      9372780117 / 9967485800
                     </p>
                   </div>
                 </div>
@@ -84,10 +84,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-pharma-blue">Email</h4>
                     <p className="text-pharma-grey">
-                      info@Traverseplatform.com
+                      ankur@jignaenterprises.com
                     </p>
                     <p className="text-pharma-grey text-sm">
-                      sales@Traverseplatform.com
+                      {/* sales@Traverseplatform.com */}
                     </p>
                   </div>
                 </div>
@@ -100,25 +100,8 @@ const Contact = () => {
                     <h4 className="font-semibold text-pharma-blue">
                       Headquarters
                     </h4>
-                    <p className="text-pharma-grey">123 Pharmaceutical Ave</p>
-                    <p className="text-pharma-grey">Boston, MA 02101, USA</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-blue/10 p-3 rounded-lg">
-                    <Clock className="w-6 h-6 text-pharma-blue" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-pharma-blue">
-                      Business Hours
-                    </h4>
-                    <p className="text-pharma-grey">
-                      Mon - Fri: 8:00 AM - 6:00 PM EST
-                    </p>
-                    <p className="text-pharma-grey">
-                      Emergency: 24/7 Available
-                    </p>
+                    <p className="text-pharma-grey">507, Kailas Plaza, Vallabh Baug Lane</p>
+                    <p className="text-pharma-grey">Ghatkopar(E), Mumbai-400077</p>
                   </div>
                 </div>
               </div>
