@@ -5,41 +5,44 @@ import { Beaker, Truck, FileCheck, Shield, Clock, Globe } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      icon: Beaker,
-      title: "API Manufacturing",
-      description: "High-quality Active Pharmaceutical Ingredients manufactured to international standards with complete documentation.",
-      features: ["GMP Certified", "Batch Testing", "COA Provided"]
+      icon: Globe,
+      title: "Sourcing & Trading ",
+      description: "We collaborate with a global network of reputable and GMP-compliant manufacturers to source high-quality pharmaceutical ingredients. Our sourcing strategy is built on reliability, transparency, and long-term supplier relationships.",
+      // features: ["GMP Certified", "Batch Testing", "COA Provided"]
+      features:[]
     },
     {
       icon: Truck,
-      title: "Global Supply Chain",
-      description: "Reliable worldwide distribution network ensuring timely delivery of pharmaceutical raw materials.",
-      features: ["Cold Chain", "Express Delivery", "Tracking System"]
+      title: "Distribution",
+      description: "With a robust and agile distribution network, we ensure timely and efficient delivery of pharmaceutical products across domestic and international markets. Our logistics capabilities are designed to meet the dynamic needs of our clients.",
+      // features: ["Cold Chain", "Express Delivery", "Tracking System"]
+      features:[]
     },
     {
       icon: FileCheck,
       title: "Regulatory Compliance",
-      description: "Full regulatory support ensuring all materials meet FDA, EMA, and other international standards.",
-      features: ["FDA Approved", "DMF Support", "Audit Ready"]
+      description: "Navigating complex regulatory landscapes is our forte. We ensure that all sourced and distributed products meet stringent local and international regulatory standards, including documentation support for DMFs, CEPs, and other compliance requirements.",
+      // features: ["FDA Approved", "DMF Support", "Audit Ready"]
+      features:[]
     },
-    {
-      icon: Shield,
-      title: "Quality Assurance",
-      description: "Comprehensive quality control with advanced testing facilities and certified quality systems.",
-      features: ["99.9% Purity", "Full Testing", "Quality Reports"]
-    },
-    {
-      icon: Clock,
-      title: "Just-in-Time Delivery",
-      description: "Optimized inventory management and delivery scheduling to reduce your holding costs.",
-      features: ["24/7 Support", "Emergency Stock", "Flexible Terms"]
-    },
-    {
-      icon: Globe,
-      title: "Custom Solutions",
-      description: "Tailored pharmaceutical solutions including custom synthesis and specialized formulations.",
-      features: ["Custom Synthesis", "R&D Support", "Pilot Batches"]
-    }
+    // {
+    //   icon: Shield,
+    //   title: "Quality Assurance",
+    //   description: "Comprehensive quality control with advanced testing facilities and certified quality systems.",
+    //   features: ["99.9% Purity", "Full Testing", "Quality Reports"]
+    // },
+    // {
+    //   icon: Clock,
+    //   title: "Just-in-Time Delivery",
+    //   description: "Optimized inventory management and delivery scheduling to reduce your holding costs.",
+    //   features: ["24/7 Support", "Emergency Stock", "Flexible Terms"]
+    // },
+    // {
+    //   icon: Globe,
+    //   title: "Custom Solutions",
+    //   description: "Tailored pharmaceutical solutions including custom synthesis and specialized formulations.",
+    //   features: ["Custom Synthesis", "R&D Support", "Pilot Batches"]
+    // }
   ];
 
   return (
@@ -81,13 +84,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-
-              <button className="mt-6 text-pharma-blue hover:text-pharma-green font-medium flex items-center group-hover:translate-x-2 transition-transform">
-                Learn More
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
             </div>
           ))}
         </div>
