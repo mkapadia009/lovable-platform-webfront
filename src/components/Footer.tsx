@@ -10,15 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="bg-gradient-to-r from-pharma-green to-yellow-400 p-2 rounded-lg mr-3">
-                <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                  <span className="text-pharma-blue font-bold text-lg">L</span>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Traverse Platform</h3>
-                <p className="text-blue-200 text-sm">Pharmaceutical Solutions</p>
-              </div>
+               <img src="https://i.postimg.cc/nrnrKCSs/Logo-4.png" width="150px" alt="" />
             </div>
             <p className="text-blue-200 mb-6 leading-relaxed">
               Leading global supplier of high-quality pharmaceutical raw materials, 

@@ -4,15 +4,6 @@ import { Globe, Users, Building, TrendingUp } from "lucide-react";
 const WhyChooseUs = () => {
   return (
     <div className="container mx-auto px-4">
-      {/* Header */}
-      <div className="text-center mb-16 section-fade-in">
-        <h2 className="text-4xl font-bold text-pharma-blue mb-4">Vision</h2>
-        <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
-          To be a globally respected partner in pharmaceutical sourcing and
-          distribution, enabling access to quality ingredients that support
-          innovation and better health outcomes.
-        </p>
-      </div>
 
       <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
         {/* Content */}

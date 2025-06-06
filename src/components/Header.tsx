@@ -34,7 +34,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl lg:text-3xl font-bold">
-          <img src="https://i.ibb.co/vC0MwJZg/assets-task-01jwv0dnv9eak97c3vrdj8vd66-1748958169-img-0-removebg-preview.png" width="200px" alt="" />
+          <img src="https://i.postimg.cc/T3zsHmV4/Logo-2.png" width="150px" alt="" />
         </div>
           {/* Logo */}
           {/* <div className="flex items-center">
