@@ -1,26 +1,32 @@
-
-import React from 'react';
-import { Shield, Award, FileCheck, Users, Microscope, Clock } from 'lucide-react';
+import React from "react";
+import {
+  Shield,
+  Award,
+  FileCheck,
+  Users,
+  Microscope,
+  Clock,
+} from "lucide-react";
 
 const Quality = () => {
   const certifications = [
     { name: "ISO 9001:2015", icon: Award },
     { name: "FDA Approved", icon: Shield },
     { name: "GMP Certified", icon: FileCheck },
-    { name: "WHO Prequalified", icon: Users }
+    { name: "WHO Prequalified", icon: Users },
   ];
 
   const qualityStats = [
     { number: "99.9%", label: "Product Purity", icon: Microscope },
     { number: "24/7", label: "Quality Monitoring", icon: Clock },
     { number: "100%", label: "Batch Testing", icon: FileCheck },
-    { number: "0 PPM", label: "Defect Rate", icon: Shield }
+    { number: "0 PPM", label: "Defect Rate", icon: Shield },
   ];
 
   return (
     <section id="quality" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 section-fade-in">
+        {/* <div className="text-center mb-16 section-fade-in">
           <h2 className="text-4xl font-bold text-pharma-blue mb-4">
             Uncompromising Quality Standards
           </h2>
@@ -28,47 +34,81 @@ const Quality = () => {
             Our commitment to quality is reflected in our world-class facilities, rigorous testing protocols, 
             and international certifications that ensure the highest standards in pharmaceutical manufacturing.
           </p>
-        </div>
+        </div> */}
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           {/* Content */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-pharma-blue mb-6">Our Quality Promise</h3>
+              <h3 className="text-2xl font-bold text-pharma-blue mb-6">
+                Our Quality Promise
+              </h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
-                Every batch of pharmaceutical raw materials undergoes comprehensive testing in our 
-                state-of-the-art laboratories. Our quality management system ensures complete 
-                traceability from source to delivery.
+                With 30 years of operational excellence, we have built a
+                reputation for:
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 p-2 rounded-lg">
-                    <Microscope className="w-6 h-6 text-pharma-green" />
+                  <div className="bg-pharma-green/10 rounded-lg">
+                    <img
+                      src="https://i.postimg.cc/8CD3JsWJ/1.png"
+                      alt="Custom Icon"
+                      className="w-11 h-10 object-contain text-pharma-green"
+                    />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pharma-blue">Advanced Testing</h4>
-                    <p className="text-pharma-grey text-sm">HPLC, GC-MS, and spectroscopic analysis for every batch</p>
+                    <h4 className="font-semibold text-pharma-blue">
+                      Reliability in sourcing from GMP-compliant and regulatory-approved manufacturers
+                    </h4>
+                    {/* <p className="text-pharma-grey text-sm">HPLC, GC-MS, and spectroscopic analysis for every batch</p> */}
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 p-2 rounded-lg">
-                    <Shield className="w-6 h-6 text-pharma-green" />
+                  <div className="bg-pharma-green/10 rounded-lg">
+                    <img
+                      src="https://i.postimg.cc/L6xwYmDN/2.png"
+                      alt="Custom Icon"
+                      className="w-10 h-10 object-contain text-pharma-green"
+                    />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pharma-blue">Security & Compliance</h4>
-                    <p className="text-pharma-grey text-sm">Full chain of custody documentation and regulatory compliance</p>
+                    <h4 className="font-semibold text-pharma-blue">
+                      Agility in responding to market demands and regulatory changes
+                    </h4>
+                    {/* <p className="text-pharma-grey text-sm">Full chain of custody documentation and regulatory compliance</p> */}
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 p-2 rounded-lg">
-                    <FileCheck className="w-6 h-6 text-pharma-green" />
+                  <div className="bg-pharma-green/10 rounded-lg">
+                    <img
+                      src="https://i.postimg.cc/mD48pnVP/3.png"
+                      alt="Custom Icon"
+                      className="w-10 h-10 object-contain text-pharma-green"
+                    />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-pharma-blue">Documentation</h4>
-                    <p className="text-pharma-grey text-sm">Complete COA, stability data, and regulatory documentation</p>
+                    <h4 className="font-semibold text-pharma-blue">
+                      Transparency in all our business dealings
+                    </h4>
+                    {/* <p className="text-pharma-grey text-sm">Complete COA, stability data, and regulatory documentation</p> */}
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="bg-pharma-green/10 rounded-lg">
+                    <img
+                      src="https://i.postimg.cc/N0q4Ln3d/4.png"
+                      alt="Custom Icon"
+                      className="w-10 h-10 object-contain text-pharma-green"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-pharma-blue">
+                      Compliance with international quality and safety standards
+                    </h4>
+                    {/* <p className="text-pharma-grey text-sm">Complete COA, stability data, and regulatory documentation</p> */}
                   </div>
                 </div>
               </div>
@@ -77,8 +117,8 @@ const Quality = () => {
 
           {/* Image */}
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80"
+            <img
+              src="https://i.postimg.cc/9FsPNSQc/image19.png"
               alt="Quality control laboratory"
               className="w-full h-96 object-cover rounded-2xl shadow-2xl"
             />
@@ -116,11 +156,16 @@ const Quality = () => {
         {/* Quality Statistics */}
         <div className="grid md:grid-cols-4 gap-8">
           {qualityStats.map((stat, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow group">
+            <div
+              key={index}
+              className="bg-white rounded-xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow group"
+            >
               <div className="bg-gradient-to-br from-pharma-blue to-pharma-green p-4 rounded-full w-fit mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <stat.icon className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-pharma-blue mb-2">{stat.number}</div>
+              <div className="text-3xl font-bold text-pharma-blue mb-2">
+                {stat.number}
+              </div>
               <div className="text-pharma-grey">{stat.label}</div>
             </div>
           ))}
