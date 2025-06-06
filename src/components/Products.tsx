@@ -1,35 +1,42 @@
 
 import React from 'react';
-import { Pill, Heart, Brain, Zap } from 'lucide-react';
+import { Pill, Heart, Brain, Leaf, ShieldPlus } from 'lucide-react';
 
 const Products = () => {
   const productCategories = [
     {
       icon: Heart,
-      title: "Cardiovascular APIs",
+      title: "Active Pharmaceutical Ingredients (APIs)",
       description: "High-quality active ingredients for heart and blood vessel medications.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+      image: "https://i.postimg.cc/yYQ2G7w2/image4.jpg",
       products: ["Atorvastatin", "Metoprolol", "Lisinopril", "Amlodipine"]
     },
     {
       icon: Brain,
-      title: "Neurological APIs",
+      title: "Excipients",
       description: "Specialized compounds for central nervous system treatments.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=600&q=80",
+      image: "https://i.postimg.cc/j5HG3Pbh/image6.png",
       products: ["Gabapentin", "Sertraline", "Donepezil", "Levetiracetam"]
     },
     {
       icon: Pill,
-      title: "Anti-Infective APIs",
+      title: "Enzymes",
       description: "Potent antimicrobial and antiviral pharmaceutical ingredients.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
+      image: "https://i.postimg.cc/tCqHfS7n/image8.jpg",
       products: ["Azithromycin", "Ciprofloxacin", "Acyclovir", "Cefixime"]
     },
     {
-      icon: Zap,
-      title: "Oncology APIs",
+      icon: ShieldPlus,
+      title: "Antibiotics",
       description: "Advanced compounds for cancer treatment and therapy.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&q=80",
+      image: "https://i.postimg.cc/d1V1JsVr/image9.jpg",
+      products: ["Imatinib", "Paclitaxel", "Carboplatin", "Rituximab"]
+    },
+    {
+      icon: Leaf,
+      title: "Botanical & Natural Extracts ",
+      description: "Advanced compounds for cancer treatment and therapy.",
+      image: "https://i.postimg.cc/25CMt30d/image10.jpg",
       products: ["Imatinib", "Paclitaxel", "Carboplatin", "Rituximab"]
     }
   ];
@@ -74,7 +81,7 @@ const Products = () => {
                   {category.description}
                 </p>
 
-                <div className="mb-6">
+                {/* <div className="mb-6">
                   <h4 className="font-semibold text-pharma-blue mb-3">Featured Products:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {category.products.map((product, idx) => (
@@ -83,18 +90,18 @@ const Products = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
-                <button className="bg-pharma-blue hover:bg-pharma-green text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium group-hover:translate-x-2">
+                {/* <button className="bg-pharma-blue hover:bg-pharma-green text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium group-hover:translate-x-2">
                   View Full Catalog
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-pharma-blue to-pharma-green rounded-2xl p-12 text-center text-white">
+        {/* <div className="bg-gradient-to-r from-pharma-blue to-pharma-green rounded-2xl p-12 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Need a Custom Solution?</h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
             Our R&D team can develop custom APIs and pharmaceutical intermediates tailored to your specific requirements.
@@ -107,7 +114,7 @@ const Products = () => {
               Download Catalog
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
