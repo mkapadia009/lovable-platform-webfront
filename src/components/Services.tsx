@@ -50,7 +50,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 section-fade-in">
           <h2 className="text-4xl font-bold text-pharma-blue mb-4">
-            Comprehensive Pharmaceutical Services
+            Our Services
           </h2>
           <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
             From raw material sourcing to regulatory compliance, we provide end-to-end solutions 

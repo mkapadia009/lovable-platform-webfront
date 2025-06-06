@@ -1,5 +1,6 @@
 import React from "react";
 import { Globe, Users, Building, TrendingUp } from "lucide-react";
+import WhyChooseUs from "./WhyChooseUs";
 
 const About = () => {
   const stats = [
@@ -42,18 +43,24 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 section-fade-in">
-          <h2 className="text-4xl font-bold text-pharma-blue mb-4">
-            Trusted Partner in Pharmaceutical Excellence
-          </h2>
+          <h2 className="text-4xl font-bold text-pharma-blue mb-4">Vision</h2>
           <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
-            For over 25 years, Traverse Platform has been at the forefront of
-            pharmaceutical raw material supply, building lasting partnerships
-            with healthcare companies worldwide.
+            To be a globally respected partner in pharmaceutical sourcing and
+            distribution, enabling access to quality ingredients that support
+            innovation and better health outcomes.
+          </p>
+        </div>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-pharma-blue mb-4">Mission</h2>
+          <p className="text-xl text-pharma-grey max-w-3xl mx-auto">
+            To deliver excellence through ethical sourcing, regulatory
+            expertise, and customer-centric solutions, while preserving the
+            legacy of trust and quality.
           </p>
         </div>
 
         {/* Company Stats */}
-        <div className="grid md:grid-cols-4 gap-8 mb-20">
+        {/* <div className="grid md:grid-cols-4 gap-8 mb-20">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">
               <div className="bg-gradient-to-br from-pharma-blue to-pharma-green p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform">
@@ -65,7 +72,7 @@ const About = () => {
               <div className="text-pharma-grey font-medium">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
@@ -76,7 +83,7 @@ const About = () => {
               </h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
                 Founded in [1995] by the visionary Late Mr. Bhupendra Doshi,
-                [Company Name] has grown into a trusted name in the
+                Jigna Enterprises has grown into a trusted name in the
                 pharmaceutical industry. With a legacy built on integrity,
                 quality, and long-standing partnerships, the company is now
                 reaching new heights under the dynamic leadership of Mr. Ankur
@@ -91,18 +98,6 @@ const About = () => {
                 multi-generational commitment to quality and service continues
                 to drive our growth and reputation in the industry.
               </p>
-
-              <div className="bg-pharma-green/10 p-6 rounded-xl">
-                <h4 className="font-semibold text-pharma-blue mb-2">
-                  Our Mission
-                </h4>
-                <p className="text-pharma-grey">
-                  To advance global health by providing pharmaceutical companies
-                  with the highest quality raw materials, expert support, and
-                  innovative solutions that enable the development of
-                  life-saving medications.
-                </p>
-              </div>
             </div>
           </div>
 
@@ -121,46 +116,7 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        {/* Timeline */}
-        <div className="bg-gray-50 rounded-2xl p-12">
-          <h3 className="text-3xl font-bold text-pharma-blue text-center mb-12">
-            Our Journey
-          </h3>
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-1 bg-pharma-blue/20 hidden md:block"></div>
-
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <div
-                  key={index}
-                  className="relative flex items-start space-x-8"
-                >
-                  {/* Timeline dot */}
-                  <div className="bg-pharma-blue p-3 rounded-full relative z-10 hidden md:block">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="bg-white rounded-xl p-6 shadow-lg flex-1 hover:shadow-xl transition-shadow">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                      <div>
-                        <div className="text-pharma-green font-bold text-lg mb-2">
-                          {item.year}
-                        </div>
-                        <h4 className="text-xl font-semibold text-pharma-blue mb-2">
-                          {item.title}
-                        </h4>
-                        <p className="text-pharma-grey">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <WhyChooseUs />
       </div>
     </section>
   );

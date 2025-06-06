@@ -10,10 +10,11 @@ import {
 
 const Quality = () => {
   const certifications = [
-    { name: "ISO 9001:2015", icon: Award },
-    { name: "FDA Approved", icon: Shield },
-    { name: "GMP Certified", icon: FileCheck },
-    { name: "WHO Prequalified", icon: Users },
+    { name: "Pharmaceutical Manufacturing", url: "https://i.postimg.cc/qRvVZQkx/Med-icons.png" },
+    { name: "Nutraceuticals", url: "https://i.postimg.cc/tCS5h5fH/Med-icons-1.png" },
+    { name: "Biotechnology", url: "https://i.postimg.cc/9fKXTvPq/Med-icons-2.png" },
+    { name: "Veterinary Medicine", url: "https://i.postimg.cc/XqcnRqRw/Med-icons-4.png" },
+    { name: "Herbal & Ayurvedic Formulations", url: "https://i.postimg.cc/tgZpXB0R/Med-icons-3.png" },
   ];
 
   const qualityStats = [
@@ -41,7 +42,7 @@ const Quality = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-pharma-blue mb-6">
-                Our Quality Promise
+                Our Legacy
               </h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
                 With 30 years of operational excellence, we have built a
@@ -139,13 +140,13 @@ const Quality = () => {
         {/* Certifications */}
         <div className="bg-white rounded-2xl p-12 shadow-lg mb-16">
           <h3 className="text-2xl font-bold text-pharma-blue text-center mb-8">
-            International Certifications & Approvals
+            Industries We Serve
           </h3>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-5 gap-8">
             {certifications.map((cert, index) => (
               <div key={index} className="text-center group">
                 <div className="bg-pharma-blue/10 p-6 rounded-xl mb-4 group-hover:bg-pharma-green/10 transition-colors">
-                  <cert.icon className="w-12 h-12 text-pharma-blue group-hover:text-pharma-green mx-auto transition-colors" />
+                  <img src={cert.url} className="h-12 text-pharma-blue group-hover:text-pharma-green mx-auto transition-colors" />
                 </div>
                 <h4 className="font-semibold text-pharma-blue">{cert.name}</h4>
               </div>
@@ -154,7 +155,7 @@ const Quality = () => {
         </div>
 
         {/* Quality Statistics */}
-        <div className="grid md:grid-cols-4 gap-8">
+        {/* <div className="grid md:grid-cols-4 gap-8">
           {qualityStats.map((stat, index) => (
             <div
               key={index}
@@ -169,7 +170,7 @@ const Quality = () => {
               <div className="text-pharma-grey">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

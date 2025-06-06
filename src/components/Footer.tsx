@@ -54,12 +54,12 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">API Manufacturing</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Global Supply Chain</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Regulatory Compliance</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Quality Assurance</a></li>
+              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Sourcing & Trading </a></li>
+              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Distribution</a></li>
+              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Regulatory Compliance</a></li>
+              {/* <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Quality Assurance</a></li>
               <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Custom Solutions</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Technical Support</a></li>
+              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Technical Support</a></li> */}
             </ul>
           </div>
 
@@ -81,20 +81,6 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-pharma-green" />
                 <span className="text-blue-200">info@Traverseplatform.com</span>
-              </div>
-            </div>
-            
-            <div className="mt-6">
-              <h5 className="font-semibold mb-3">Newsletter</h5>
-              <div className="flex">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 rounded-l-lg text-pharma-blue"
-                />
-                <button className="bg-pharma-green hover:bg-pharma-green-dark px-4 py-2 rounded-r-lg transition-colors">
-                  Subscribe
-                </button>
               </div>
             </div>
           </div>
