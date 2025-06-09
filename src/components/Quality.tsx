@@ -10,11 +10,26 @@ import {
 
 const Quality = () => {
   const certifications = [
-    { name: "Pharmaceutical Manufacturing", url: "https://i.postimg.cc/qRvVZQkx/Med-icons.png" },
-    { name: "Nutraceuticals", url: "https://i.postimg.cc/tCS5h5fH/Med-icons-1.png" },
-    { name: "Biotechnology", url: "https://i.postimg.cc/9fKXTvPq/Med-icons-2.png" },
-    { name: "Veterinary Medicine", url: "https://i.postimg.cc/XqcnRqRw/Med-icons-4.png" },
-    { name: "Herbal & Ayurvedic Formulations", url: "https://i.postimg.cc/tgZpXB0R/Med-icons-3.png" },
+    {
+      name: "Pharmaceutical Manufacturing",
+      url: "https://i.postimg.cc/qRvVZQkx/Med-icons.png",
+    },
+    {
+      name: "Nutraceuticals",
+      url: "https://i.postimg.cc/tCS5h5fH/Med-icons-1.png",
+    },
+    {
+      name: "Biotechnology",
+      url: "https://i.postimg.cc/9fKXTvPq/Med-icons-2.png",
+    },
+    {
+      name: "Veterinary Medicine",
+      url: "https://i.postimg.cc/tgZpXB0R/Med-icons-3.png",
+    },
+    {
+      name: "Herbal & Ayurvedic Formulations",
+      url: "https://i.postimg.cc/XqcnRqRw/Med-icons-4.png",
+    },
   ];
 
   const qualityStats = [
@@ -49,69 +64,43 @@ const Quality = () => {
                 reputation for:
               </p>
 
-              <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 rounded-lg">
-                    <img
-                      src="https://i.postimg.cc/8CD3JsWJ/1.png"
-                      alt="Custom Icon"
-                      className="w-11 h-10 object-contain text-pharma-green"
-                    />
+              <div className="space-y-6">
+                {[
+                  {
+                    src: "https://i.postimg.cc/8CD3JsWJ/1.png",
+                    text: "Reliability in sourcing from GMP-compliant and regulatory-approved manufacturers",
+                  },
+                  {
+                    src: "https://i.postimg.cc/L6xwYmDN/2.png",
+                    text: "Agility in responding to market demands and regulatory changes",
+                  },
+                  {
+                    src: "https://i.postimg.cc/mD48pnVP/3.png",
+                    text: "Transparency in all our business dealings",
+                  },
+                  {
+                    src: "https://i.postimg.cc/N0q4Ln3d/4.png",
+                    text: "Compliance with international quality and safety standards",
+                  },
+                ].map(({ src, text }, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col items-center text-center sm:flex-row sm:text-left sm:items-center sm:space-x-4 space-y-3 sm:space-y-0"
+                  >
+                    <div className="w-14 h-14 bg-pharma-green/10 rounded-lg flex items-center justify-center">
+                      <img
+                        src={src}
+                        alt="Custom Icon"
+                        className="w-8 h-8 object-contain"
+                      />
+                    </div>
+                    <div className="max-w-md px-2">
+                      <h4 className="font-semibold text-pharma-blue text-sm sm:text-base">
+                        {text}
+                      </h4>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-pharma-blue">
-                      Reliability in sourcing from GMP-compliant and regulatory-approved manufacturers
-                    </h4>
-                    {/* <p className="text-pharma-grey text-sm">HPLC, GC-MS, and spectroscopic analysis for every batch</p> */}
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 rounded-lg">
-                    <img
-                      src="https://i.postimg.cc/L6xwYmDN/2.png"
-                      alt="Custom Icon"
-                      className="w-10 h-10 object-contain text-pharma-green"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-pharma-blue">
-                      Agility in responding to market demands and regulatory changes
-                    </h4>
-                    {/* <p className="text-pharma-grey text-sm">Full chain of custody documentation and regulatory compliance</p> */}
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 rounded-lg">
-                    <img
-                      src="https://i.postimg.cc/mD48pnVP/3.png"
-                      alt="Custom Icon"
-                      className="w-10 h-10 object-contain text-pharma-green"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-pharma-blue">
-                      Transparency in all our business dealings
-                    </h4>
-                    {/* <p className="text-pharma-grey text-sm">Complete COA, stability data, and regulatory documentation</p> */}
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="bg-pharma-green/10 rounded-lg">
-                    <img
-                      src="https://i.postimg.cc/N0q4Ln3d/4.png"
-                      alt="Custom Icon"
-                      className="w-10 h-10 object-contain text-pharma-green"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-pharma-blue">
-                      Compliance with international quality and safety standards
-                    </h4>
-                    {/* <p className="text-pharma-grey text-sm">Complete COA, stability data, and regulatory documentation</p> */}
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -146,7 +135,10 @@ const Quality = () => {
             {certifications.map((cert, index) => (
               <div key={index} className="text-center group">
                 <div className="bg-pharma-blue/10 p-6 rounded-xl mb-4 group-hover:bg-pharma-green/10 transition-colors">
-                  <img src={cert.url} className="h-12 text-pharma-blue group-hover:text-pharma-green mx-auto transition-colors" />
+                  <img
+                    src={cert.url}
+                    className="h-12 text-pharma-blue group-hover:text-pharma-green mx-auto transition-colors"
+                  />
                 </div>
                 <h4 className="font-semibold text-pharma-blue">{cert.name}</h4>
               </div>

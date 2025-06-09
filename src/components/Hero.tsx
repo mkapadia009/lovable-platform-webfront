@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="relative animate-slide-in">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
+                  src="https://i.ibb.co/Kc3LCfVQ/20250609-1125-Adding-Powder-Materials-remix-01jx9m2dhyfn7tha54ts1jzcez.png"
                   alt="Modern pharmaceutical laboratory"
                   className="w-full h-96 object-cover"
                 />

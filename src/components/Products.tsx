@@ -22,7 +22,7 @@ const Products = () => {
       icon: Pill,
       title: "Enzymes",
       description: "Potent antimicrobial and antiviral pharmaceutical ingredients.",
-      image: "https://i.postimg.cc/tCqHfS7n/image8.jpg",
+      image: "https://i.ibb.co/5XnRvLgR/20250609-1109-Scattered-White-Powder-remix-01jx9k4nk7ecjt24tr22070686.png",
       products: ["Azithromycin", "Ciprofloxacin", "Acyclovir", "Cefixime"]
     },
     {
@@ -77,9 +77,9 @@ const Products = () => {
                   {category.title}
                 </h3>
                 
-                <p className="text-pharma-grey mb-6 leading-relaxed">
+                {/* <p className="text-pharma-grey mb-6 leading-relaxed">
                   {category.description}
-                </p>
+                </p> */}
 
                 {/* <div className="mb-6">
                   <h4 className="font-semibold text-pharma-blue mb-3">Featured Products:</h4>

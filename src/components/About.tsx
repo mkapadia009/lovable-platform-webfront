@@ -82,7 +82,7 @@ const About = () => {
                 Our Story
               </h3>
               <p className="text-pharma-grey leading-relaxed mb-6">
-                Founded in [1995] by the visionary Late Mr. Bhupendra Doshi,
+                Founded in 1993 by the visionary Late Mr. Bhupendra Doshi,
                 Jigna Enterprises has grown into a trusted name in the
                 pharmaceutical industry. With a legacy built on integrity,
                 quality, and long-standing partnerships, the company is now
