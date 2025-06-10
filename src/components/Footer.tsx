@@ -28,6 +28,7 @@ const Footer = () => {
               <li><a href="#home" className="text-blue-200 hover:text-white transition-colors">Home</a></li>
               <li><a href="#products" className="text-blue-200 hover:text-white transition-colors">Products</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Services</a></li>
+              <li><a href="#legacy" className="text-blue-200 hover:text-white transition-colors">Our Legacy</a></li>
               <li><a href="#about" className="text-blue-200 hover:text-white transition-colors">About</a></li>
               <li><a href="#contact" className="text-blue-200 hover:text-white transition-colors">Contact</a></li>
             </ul>
@@ -70,12 +71,11 @@ const Footer = () => {
         <div className="border-t border-blue-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-blue-200 text-sm mb-4 md:mb-0">
-              © 2024 Traverse Platform. All rights reserved.
+              © 2025 Traverse TEC Labs. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-blue-200 hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="text-blue-200 hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="text-blue-200 hover:text-white transition-colors">Cookie Policy</a>
+              <a href="#" className="text-blue-200 hover:text-white transition-colors">Return Policy</a>
+              <a href="#" className="text-blue-200 hover:text-white transition-colors">Handling Services</a>
             </div>
           </div>
         </div>

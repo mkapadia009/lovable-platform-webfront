@@ -17,11 +17,11 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91 9372780117</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span>info@Traverseplatform.com</span>
+              <span>ankur@jignaenterprises.com</span>
             </div>
           </div>
           <div className="hidden md:block">
