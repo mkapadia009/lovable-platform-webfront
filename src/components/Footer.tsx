@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <p className="text-blue-200 mb-6 leading-relaxed">
               Leading global supplier of high-quality pharmaceutical raw materials, 
-              trusted by healthcare companies worldwide for over 25 years.
+              trusted by healthcare companies worldwide for over 30 years.
             </p>
             <div className="flex space-x-4">
              
@@ -28,7 +28,7 @@ const Footer = () => {
               <li><a href="#home" className="text-blue-200 hover:text-white transition-colors">Home</a></li>
               <li><a href="#products" className="text-blue-200 hover:text-white transition-colors">Products</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#quality" className="text-blue-200 hover:text-white transition-colors">Quality</a></li>
+              <li><a href="#legacy" className="text-blue-200 hover:text-white transition-colors">Our Legacy</a></li>
               <li><a href="#about" className="text-blue-200 hover:text-white transition-colors">About</a></li>
               <li><a href="#contact" className="text-blue-200 hover:text-white transition-colors">Contact</a></li>
             </ul>
@@ -38,12 +38,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Sourcing & Trading </a></li>
+              <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Sourcing & Trading </a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Distribution</a></li>
               <li><a href="#services" className="text-blue-200 hover:text-white transition-colors">Regulatory Compliance</a></li>
-              {/* <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Quality Assurance</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Custom Solutions</a></li>
-              <li><a href="#" className="text-blue-200 hover:text-white transition-colors">Technical Support</a></li> */}
             </ul>
           </div>
 

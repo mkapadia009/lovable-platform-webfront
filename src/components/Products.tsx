@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Pill, Heart, Brain, Leaf, ShieldPlus } from 'lucide-react';
+import { Pill, Heart, Brain, Leaf } from 'lucide-react';
 
 const Products = () => {
   const productCategories = [
@@ -24,13 +24,6 @@ const Products = () => {
       description: "Potent antimicrobial and antiviral pharmaceutical ingredients.",
       image: "https://i.ibb.co/5XnRvLgR/20250609-1109-Scattered-White-Powder-remix-01jx9k4nk7ecjt24tr22070686.png",
       products: ["Azithromycin", "Ciprofloxacin", "Acyclovir", "Cefixime"]
-    },
-    {
-      icon: ShieldPlus,
-      title: "Antibiotics",
-      description: "Advanced compounds for cancer treatment and therapy.",
-      image: "https://i.postimg.cc/d1V1JsVr/image9.jpg",
-      products: ["Imatinib", "Paclitaxel", "Carboplatin", "Rituximab"]
     },
     {
       icon: Leaf,
@@ -76,45 +69,10 @@ const Products = () => {
                 <h3 className="text-2xl font-bold text-pharma-blue mb-4 group-hover:text-pharma-green transition-colors">
                   {category.title}
                 </h3>
-                
-                {/* <p className="text-pharma-grey mb-6 leading-relaxed">
-                  {category.description}
-                </p> */}
-
-                {/* <div className="mb-6">
-                  <h4 className="font-semibold text-pharma-blue mb-3">Featured Products:</h4>
-                  <div className="grid grid-cols-2 gap-2">
-                    {category.products.map((product, idx) => (
-                      <div key={idx} className="bg-gray-50 px-3 py-2 rounded-lg text-sm text-pharma-grey">
-                        {product}
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
-
-                {/* <button className="bg-pharma-blue hover:bg-pharma-green text-white px-6 py-3 rounded-lg transition-all duration-300 font-medium group-hover:translate-x-2">
-                  View Full Catalog
-                </button> */}
               </div>
             </div>
           ))}
         </div>
-
-        {/* CTA Section */}
-        {/* <div className="bg-gradient-to-r from-pharma-blue to-pharma-green rounded-2xl p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">Need a Custom Solution?</h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Our R&D team can develop custom APIs and pharmaceutical intermediates tailored to your specific requirements.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-pharma-blue hover:bg-gray-100 px-8 py-3 rounded-lg transition-colors font-semibold">
-              Contact R&D Team
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-pharma-blue px-8 py-3 rounded-lg transition-all duration-300 font-semibold">
-              Download Catalog
-            </button>
-          </div>
-        </div> */}
       </div>
     </section>
   );

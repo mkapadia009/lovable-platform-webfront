@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare } from "lucide-react";
 import emailjs from "@emailjs/browser";
@@ -20,6 +21,7 @@ const Contact = () => {
       email: formData.get('email'),
       message: formData.get('message'),
       phone: formData.get('phone'),
+      product: formData.get('product'),
       time: currentTime,
       title: formData.get('company') ? `New inquiry from ${formData.get('company')} regarding ${inquiryType}` : `New inquiry regarding ${inquiryType}`,
     };
@@ -42,6 +44,7 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -85,9 +88,6 @@ const Contact = () => {
                     <h4 className="font-semibold text-pharma-blue">Email</h4>
                     <p className="text-pharma-grey">
                       ankur@jignaenterprises.com
-                    </p>
-                    <p className="text-pharma-grey text-sm">
-                      {/* sales@Traverseplatform.com */}
                     </p>
                   </div>
                 </div>
@@ -184,6 +184,18 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-pharma-blue font-medium mb-2">
+                    Product of Interest
+                  </label>
+                  <input
+                    type="text"
+                    name="product"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pharma-blue focus:border-pharma-blue transition-colors"
+                    placeholder="e.g., Atorvastatin, Metformin, etc."
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-pharma-blue font-medium mb-2">
                     Inquiry Type
                   </label>
                   <select
@@ -193,10 +205,6 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pharma-blue focus:border-pharma-blue transition-colors"
                   >
                     <option>General Inquiry</option>
-                    <option>Product Quote</option>
-                    <option>Technical Support</option>
-                    <option>Partnership Opportunity</option>
-                    <option>Quality Assurance</option>
                   </select>
                 </div>
 

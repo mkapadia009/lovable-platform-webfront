@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Globe, Users, Building, TrendingUp } from "lucide-react";
 import WhyChooseUs from "./WhyChooseUs";
@@ -59,21 +60,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* Company Stats */}
-        {/* <div className="grid md:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="bg-gradient-to-br from-pharma-blue to-pharma-green p-6 rounded-2xl mb-6 group-hover:scale-110 transition-transform">
-                <stat.icon className="w-12 h-12 text-white mx-auto" />
-              </div>
-              <div className="text-4xl font-bold text-pharma-blue mb-2">
-                {stat.number}
-              </div>
-              <div className="text-pharma-grey font-medium">{stat.label}</div>
-            </div>
-          ))}
-        </div> */}
-
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
           <div className="space-y-8">
@@ -110,7 +96,7 @@ const About = () => {
             />
             <div className="absolute -top-8 -right-8 bg-white rounded-xl shadow-xl p-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-pharma-blue">25+</div>
+                <div className="text-3xl font-bold text-pharma-blue">30+</div>
                 <div className="text-pharma-grey">Years of Innovation</div>
               </div>
             </div>
