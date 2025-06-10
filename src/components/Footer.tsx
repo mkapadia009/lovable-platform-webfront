@@ -74,8 +74,8 @@ const Footer = () => {
               © 2025 Traverse TEC Labs. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="/return-policy" className="text-blue-200 hover:text-white transition-colors">Return Policy</a>
-              <a href="/return-policy" className="text-blue-200 hover:text-white transition-colors">Handling Services</a>
+              {/* <a href="/return-policy" className="text-blue-200 hover:text-white transition-colors">Return Policy</a> */}
+              <a href="/return-policy" className="text-blue-200 hover:text-white transition-colors">Return Policy & Handling Policy</a>
             </div>
           </div>
         </div>

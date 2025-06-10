@@ -14,7 +14,7 @@ const ReturnPolicy = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Return Policy & Handling Services
+              Return Policy & Handling Policy
             </h1>
             <p className="text-xl text-blue-200 leading-relaxed">
               Comprehensive procedures for returns and handling services ensuring compliance with quality and regulatory standards
