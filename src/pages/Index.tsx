@@ -7,7 +7,6 @@ import Products from '../components/Products';
 import ProductCatalog from '../components/ProductCatalog';
 import Quality from '../components/Quality';
 import About from '../components/About';
-import Legacy from '../components/Legacy';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -65,7 +64,6 @@ const Index = () => {
       <ProductCatalog />
       <Quality />
       <About />
-      <Legacy />
       <Contact />
       <Footer />
     </div>

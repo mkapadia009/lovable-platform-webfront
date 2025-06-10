@@ -36,25 +36,12 @@ const Header = () => {
           <div className="text-2xl lg:text-3xl font-bold">
           <img src="https://i.postimg.cc/T3zsHmV4/Logo-2.png" width="150px" alt="" />
         </div>
-          {/* Logo */}
-          {/* <div className="flex items-center">
-            <div className="bg-gradient-to-r from-pharma-blue to-pharma-green p-2 rounded-lg mr-3">
-              <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                <span className="text-pharma-blue font-bold text-lg">L</span>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-pharma-blue">Traverse Platform</h1>
-              <p className="text-xs text-pharma-grey">Pharmaceutical Solutions</p>
-            </div>
-          </div> */}
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <a href="#home" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Home</a>
             <a href="#products" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Products</a>
             <a href="#services" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Services</a>
-            <a href="#quality" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Quality</a>
             <a href="#about" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">About</a>
             <button className="bg-pharma-green hover:bg-pharma-green-dark text-white px-6 py-2 rounded-lg transition-colors font-medium">
               <a href="#contact">Contact Us</a>
@@ -78,7 +65,6 @@ const Header = () => {
               <a href="#home" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Home</a>
               <a href="#products" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Products</a>
               <a href="#services" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Services</a>
-              <a href="#quality" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Quality</a>
               <a href="#about" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">About</a>
               <a href="#contact" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Contact</a>
               <button className="bg-pharma-green hover:bg-pharma-green-dark text-white px-6 py-2 rounded-lg transition-colors font-medium w-fit">
