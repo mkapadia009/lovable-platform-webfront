@@ -26,10 +26,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_mcz9fbq", // 🔁 Replace this
-        "template_e5851qp", // 🔁 Replace this
+        "service_5drorxn", // 🔁 Replace this
+        "template_1scrqis", // 🔁 Replace this
         templateParams,
-        "5zyv5YJEiFvLrOpsb" // 🔁 Replace this
+        "gOjsU2OJ-zOGpf2SS" // 🔁 Replace this
       )
       .then(
         () => {
