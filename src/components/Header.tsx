@@ -42,6 +42,7 @@ const Header = () => {
             <a href="#home" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Home</a>
             <a href="#products" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Products</a>
             <a href="#services" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Services</a>
+            <a href="#legacy" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Our Legacy</a>
             <a href="#about" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">About</a>
             <button className="bg-pharma-green hover:bg-pharma-green-dark text-white px-6 py-2 rounded-lg transition-colors font-medium">
               <a href="#contact">Contact Us</a>
@@ -65,6 +66,7 @@ const Header = () => {
               <a href="#home" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Home</a>
               <a href="#products" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Products</a>
               <a href="#services" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Services</a>
+              <a href="#legacy" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Our Legacy</a>
               <a href="#about" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">About</a>
               <a href="#contact" className="text-pharma-grey hover:text-pharma-blue transition-colors font-medium">Contact</a>
               <button className="bg-pharma-green hover:bg-pharma-green-dark text-white px-6 py-2 rounded-lg transition-colors font-medium w-fit">

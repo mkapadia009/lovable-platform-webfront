@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Search, Filter } from 'lucide-react';
+import { Search, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 import {
   Table,
   TableBody,
@@ -13,8 +13,10 @@ import {
 const ProductCatalog = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
 
-  // Complete product data - 75 products
+  // Complete product data - 77 products
   const products = [
     { name: "Atorvastatin", category: "APIs", description: "Cholesterol medication", casNumber: "134523-00-5" },
     { name: "Metoprolol", category: "APIs", description: "Beta-blocker medication", casNumber: "37350-58-6" },
@@ -92,7 +94,9 @@ const ProductCatalog = () => {
     { name: "Tenofovir", category: "APIs", description: "Nucleotide reverse transcriptase inhibitor", casNumber: "147127-20-6" },
     { name: "Emtricitabine", category: "APIs", description: "Nucleoside reverse transcriptase inhibitor", casNumber: "143491-57-0" },
     { name: "Maraviroc", category: "APIs", description: "CCR5 antagonist", casNumber: "376348-65-1" },
-    { name: "Enfuvirtide", category: "APIs", description: "Fusion inhibitor", casNumber: "159519-65-0" }
+    { name: "Enfuvirtide", category: "APIs", description: "Fusion inhibitor", casNumber: "159519-65-0" },
+    { name: "Celecoxib", category: "APIs", description: "COX-2 inhibitor", casNumber: "169590-42-5" },
+    { name: "Meloxicam", category: "APIs", description: "NSAID medication", casNumber: "71125-38-7" }
   ];
 
   const categories = ['All', 'APIs', 'Excipients', 'Enzymes', 'Botanical'];
@@ -104,6 +108,37 @@ const ProductCatalog = () => {
     const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
+
+  // Pagination logic
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentProducts = filteredProducts.slice(startIndex, endIndex);
+
+  // Reset to first page when search or filter changes
+  React.useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, selectedCategory]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  const generatePageNumbers = () => {
+    const pages = [];
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+    if (endPage - startPage + 1 < maxVisiblePages) {
+      startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+    return pages;
+  };
 
   return (
     <section id="catalog" className="py-20 bg-gray-50">
@@ -146,14 +181,17 @@ const ProductCatalog = () => {
         </div>
 
         {/* Results Count */}
-        <div className="mb-6">
+        <div className="mb-6 flex justify-between items-center">
           <p className="text-pharma-grey">
-            Showing {filteredProducts.length} of {products.length} products
+            Showing {startIndex + 1}-{Math.min(endIndex, filteredProducts.length)} of {filteredProducts.length} products
+          </p>
+          <p className="text-pharma-grey">
+            Page {currentPage} of {totalPages}
           </p>
         </div>
 
         {/* Products Table */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
           <div className="overflow-x-auto">
             <Table>
               <TableHeader>
@@ -165,7 +203,7 @@ const ProductCatalog = () => {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {filteredProducts.map((product, index) => (
+                {currentProducts.map((product, index) => (
                   <TableRow key={index} className="hover:bg-gray-50 transition-colors">
                     <TableCell className="font-medium text-pharma-blue">{product.name}</TableCell>
                     <TableCell>
@@ -181,6 +219,43 @@ const ProductCatalog = () => {
             </Table>
           </div>
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center space-x-2">
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="flex items-center px-3 py-2 text-sm font-medium text-pharma-grey bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft className="w-4 h-4 mr-1" />
+              Previous
+            </button>
+            
+            {generatePageNumbers().map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`px-3 py-2 text-sm font-medium rounded-lg ${
+                  currentPage === page
+                    ? 'bg-pharma-blue text-white'
+                    : 'text-pharma-grey bg-white border border-gray-300 hover:bg-gray-50'
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+            
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="flex items-center px-3 py-2 text-sm font-medium text-pharma-grey bg-white border border-gray-300 rounded-lg hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Next
+              <ChevronRight className="w-4 h-4 ml-1" />
+            </button>
+          </div>
+        )}
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-12">
